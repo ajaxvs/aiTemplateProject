@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/26.0">
+
+	<id>ru.ajaxvs.as.aiTemplateProject.desktop</id>
+	<filename>aiTemplateProject_desktop</filename>
+	<name>aiTemplateProject_desktop</name>
+	<versionNumber>0.0.1</versionNumber>
+	<copyright>Dmitriy Kravtsov</copyright>
+
+	<!-- Settings for the application's initial window. Required. -->
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+		
+		<!-- <title></title> -->
+
+		<!-- <systemChrome>standart</systemChrome> -->
+		<!-- <transparent>false</transparent> -->
+
+		<!-- <minimizable>true</minimizable> -->
+		<!-- <maximizable>true</maximizable> -->
+		<!-- <resizable>true</resizable> -->
+
+        <!-- <depthAndStencil>false</depthAndStencil> -->
+        
+                
+        <renderMode>direct</renderMode> <!-- auto, cpu, gpu, or direct -->
+        <aspectRatio>landscape</aspectRatio> <!-- landscape, any -->
+        <autoOrients>false</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+
+    </initialWindow>
+
+	<supportedLanguages>en</supportedLanguages> <!-- en ru -->
+
+    <icon>
+    	<image32x32>icons/32.png</image32x32>
+        <image48x48>icons/48.png</image48x48>
+        <image72x72>icons/72.png</image72x72>
+        <image96x96>icons/96.png</image96x96>
+        <image128x128>icons/128.png</image128x128>
+        <image144x144>icons/144.png</image144x144>
+        <image192x192>icons/192.png</image192x192>
+    </icon>
+
+    <android>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto">
+                <!--<uses-permission android:name="android.permission.INTERNET"/> -->
+                <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+                <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+                <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+                <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
+                <!--<uses-permission android:name="android.permission.WAKE_LOCK"/>-->
+                <!--<uses-permission android:name="android.permission.CAMERA"/>-->
+                <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+                <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+                <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+                
+                <uses-permission android:name="android.permission.INTERNET"/>
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                
+                <uses-sdk android:targetSdkVersion="19"/>
+                <uses-sdk android:minSdkVersion="9"/>			    
+                <application>
+                <!--
+                    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+                    <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+                -->
+                </application>
+                
+            </manifest>
+            
+        ]]></manifestAdditions>
+    </android>
+    
+    <extensions>
+    	<!-- 
+        <extensionID>eu.alebianco.air.extensions.analytics.NativeGATracker</extensionID>
+        <extensionID>com.grumpycarrot.ane.googleplayserviceslibrary</extensionID>
+        <extensionID>com.grumpycarrot.ane.playgameservices</extensionID>
+         -->        
+    </extensions>
+
+	<!-- <allowBrowserInvocation>false</allowBrowserInvocation> -->
+	<!-- <programMenuFolder></programMenuFolder> -->
+
+	<!-- <fileTypes> -->
+		<!-- <fileType> -->
+			<!-- <name></name> -->
+			<!-- <extension></extension> -->
+			<!-- <description></description> -->
+			<!-- <contentType></contentType> -->
+			<!-- <icon>
+				<image16x16></image16x16>
+				<image32x32></image32x32>
+				<image48x48></image48x48>
+				<image128x128></image128x128>
+			</icon> -->
+		<!-- </fileType> -->
+	<!-- </fileTypes> -->
+
+</application>
